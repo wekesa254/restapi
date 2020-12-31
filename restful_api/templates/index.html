@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create RESTFUL API with Rest_Framework</title>
+</head>
+
+<body >
+<center>
+    <h1 class="text-primary">How To Create REST API With Rest Framework in Django</h1>
+    <h4>Rest API</h4>
+    <hr/>
+    <table border="1">
+        <tr>
+
+            <th>Title</th>
+            <th>Author</th>
+            <th>Email</th>
+            <th>Date</th>
+        </tr>
+        {% for data in Article%}
+        <tr>
+
+            <td>{{data.author}}</td>
+            <td>{{data.title}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.date}} </td>
+        </tr>
+        {%endfor%}
+    </table>
+</center>
+</body>
+</html>
